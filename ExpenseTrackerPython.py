@@ -1,9 +1,3 @@
-!pip install tkcalendar
-!pip install tk
-!pip install openpyxl
-!pip install pyodbc
-!pip install openpyxl
-
 import tkinter as tk
 from tkinter import ttk, messagebox
 from tkcalendar import DateEntry
@@ -241,7 +235,7 @@ def generate_report():
 
 def clear_report_spreadsheet():
     # Open the report spreadsheet
-    report_path = r"C:\Users\andres.bonifaz\Documents\Mileage Report Template.xlsx"
+    report_path = MileageTemplatePath
     wb = openpyxl.load_workbook(report_path)
     sheet = wb.active
 
